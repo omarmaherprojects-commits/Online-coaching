@@ -1,0 +1,26 @@
+.day-count-box{display:flex;align-items:center;gap:14px;margin:22px 0;padding:15px;background:rgba(201,255,56,.06);border:1px solid rgba(201,255,56,.18);border-radius:12px}
+.day-count-box label{font-size:12px;font-weight:700}
+.day-count-box select{background:#090d0a;color:#fff;border:1px solid var(--line);border-radius:9px;padding:10px}
+.workout-day{border:1px solid var(--line);border-radius:15px;padding:16px;margin-bottom:16px;background:#0c110e}
+.workout-day-head{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin-bottom:12px}
+.workout-day-head span{color:var(--lime);font-size:11px}
+.workout-day-head input{background:#111612;color:#fff;border:1px solid var(--line);border-radius:9px;padding:11px;font:600 12px Alexandria}
+.client-workout-day{margin-bottom:28px}
+.client-day-title{display:flex;align-items:center;gap:12px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.client-day-title span{background:var(--lime);color:#111;border-radius:20px;padding:6px 10px;font-size:10px;font-weight:700}
+.client-day-title h2{font-size:22px;margin:0}
+.library-image-preview{display:block;width:110px;height:80px;object-fit:cover;border-radius:10px;border:1px solid var(--line);margin-top:8px}
+.library-search{display:block;width:100%;height:46px;margin:0 0 14px;padding:0 44px 0 15px;border:1px solid var(--line);border-radius:12px;background-color:#090d0a;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 24 24' fill='none' stroke='%23c9ff38' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;color:#fff;font:500 12px Alexandria;outline:0;transition:border-color .2s,box-shadow .2s,background-color .2s}
+.library-search::placeholder{color:#778079}
+.library-search:hover{border-color:rgba(201,255,56,.35)}
+.library-search:focus{border-color:var(--lime);background-color:#0d120e;box-shadow:0 0 0 3px rgba(201,255,56,.1)}
+.workout-day .library-search{margin-top:4px}
+.subscription-status{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0;padding:13px 15px;border-radius:11px;border:1px solid var(--line);font-size:11px}
+.subscription-status span{color:var(--muted)}
+.subscription-status.active{background:rgba(201,255,56,.07);border-color:rgba(201,255,56,.25)}
+.subscription-status.active b{color:var(--lime)}
+.subscription-status.expired{background:rgba(255,90,95,.08);border-color:rgba(255,90,95,.3)}
+.subscription-status.expired b{color:#ff777b}
+.subscription-status.waiting{color:var(--muted);background:#090d0a}
+@media(max-width:600px){.subscription-status{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.workout-day-head{grid-template-columns:auto 1fr}.workout-day-head .btn{grid-column:1/-1}}
